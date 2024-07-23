@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/isolated_cmake_environment.dir/src/main.cpp.o -o isolated_cmake_environment 

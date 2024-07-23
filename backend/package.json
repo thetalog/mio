@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Mio Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate_scylla": "node ./database/scylla/migrate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.40.3",
+    "axios": "^1.7.2",
+    "cassandra-driver": "^4.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "redis": "^4.6.15",
+    "uuid": "^10.0.0"
+  }
+}

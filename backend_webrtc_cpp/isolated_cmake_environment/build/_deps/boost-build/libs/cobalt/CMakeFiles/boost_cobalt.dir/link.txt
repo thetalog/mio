@@ -1,0 +1,2 @@
+/usr/bin/ar qc libboost_cobalt.a CMakeFiles/boost_cobalt.dir/src/detail/exception.cpp.o CMakeFiles/boost_cobalt.dir/src/detail/util.cpp.o CMakeFiles/boost_cobalt.dir/src/channel.cpp.o CMakeFiles/boost_cobalt.dir/src/error.cpp.o CMakeFiles/boost_cobalt.dir/src/main.cpp.o CMakeFiles/boost_cobalt.dir/src/this_thread.cpp.o CMakeFiles/boost_cobalt.dir/src/thread.cpp.o
+/usr/bin/ranlib libboost_cobalt.a

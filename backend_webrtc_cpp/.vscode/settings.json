@@ -1,0 +1,4 @@
+{
+  "cmake.sourceDirectory": "/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/fmt-src",
+  "cmake.ignoreCMakeListsMissing": true
+}
