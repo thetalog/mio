@@ -13,7 +13,7 @@ router.post("/recaptcha-v2-verify", async (req, res) => {
         {},
         {
           params: {
-            secret: "6LdfxRYqAAAAAHLK3LlLM-TpUxAksjRNo1i-T_rr",
+            secret: "6LdfxRYqAAAAAHLK3LlLM-TpUxAksjRNo1i-T_r1r",
             response: reCaptchaV2Token,
           },
         }

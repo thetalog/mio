@@ -61,7 +61,7 @@ export default function Login() {
         <br />
         <div
           className="g-recaptcha"
-          data-sitekey="6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M0"
+          data-sitekey="6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M10"
         ></div>
         <br />
         <button type="submit">Login</button>

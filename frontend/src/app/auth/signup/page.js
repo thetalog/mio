@@ -100,12 +100,12 @@ export default function Signup() {
         <br></br>
         <div
           className="g-recaptcha"
-          data-sitekey="6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M0"
+          data-sitekey="6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M10"
         ></div>
         <br></br>
         <button
-          // 6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M0 Site Key v2
-          // 6LdfxRYqAAAAAHLK3LlLM-TpUxAksjRNo1i-T_rr Secret Key v2
+          // 6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M10 Site Key v2
+          // 6LdfxRYqAAAAAHLK3LlLM-TpUxAksjRNo1i-T_r1r Secret Key v2
           type="submit"
         >
           Signup
