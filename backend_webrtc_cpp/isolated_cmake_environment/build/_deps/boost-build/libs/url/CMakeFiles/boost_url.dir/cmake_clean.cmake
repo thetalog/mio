@@ -133,8 +133,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_url.dir/src/url_view.cpp.o.d"
   "CMakeFiles/boost_url.dir/src/url_view_base.cpp.o"
   "CMakeFiles/boost_url.dir/src/url_view_base.cpp.o.d"
-  "libboost_url.a"
   "libboost_url.pdb"
+  "libboost_url.so"
+  "libboost_url.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

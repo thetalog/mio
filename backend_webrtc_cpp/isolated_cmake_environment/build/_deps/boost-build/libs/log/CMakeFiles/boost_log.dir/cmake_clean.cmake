@@ -71,8 +71,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_log.dir/src/timestamp.cpp.o.d"
   "CMakeFiles/boost_log.dir/src/trivial.cpp.o"
   "CMakeFiles/boost_log.dir/src/trivial.cpp.o.d"
-  "libboost_log.a"
   "libboost_log.pdb"
+  "libboost_log.so"
+  "libboost_log.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

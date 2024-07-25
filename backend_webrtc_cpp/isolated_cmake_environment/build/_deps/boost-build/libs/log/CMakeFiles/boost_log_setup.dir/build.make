@@ -210,23 +210,38 @@ boost_log_setup_OBJECTS = \
 # External object files for target boost_log_setup
 boost_log_setup_EXTERNAL_OBJECTS =
 
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/parser_utils.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/init_from_stream.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/init_from_settings.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/settings_parser.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/filter_parser.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/formatter_parser.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/default_filter_factory.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/matches_relation_factory.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/default_formatter_factory.cpp.o
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/build.make
-_deps/boost-build/libs/log/libboost_log_setup.a: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libboost_log_setup.a"
-	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/log && $(CMAKE_COMMAND) -P CMakeFiles/boost_log_setup.dir/cmake_clean_target.cmake
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/parser_utils.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/init_from_stream.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/init_from_settings.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/settings_parser.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/filter_parser.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/formatter_parser.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/default_filter_factory.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/matches_relation_factory.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/src/setup/default_formatter_factory.cpp.o
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/build.make
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/libboost_log.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/exception/libboost_exception.a
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/filesystem/libboost_filesystem.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/serialization/libboost_serialization.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/thread/libboost_thread.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/atomic/libboost_atomic.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/chrono/libboost_chrono.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/date_time/libboost_date_time.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/container/libboost_container.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/coroutine/libboost_coroutine.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/exception/libboost_exception.a
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/context/libboost_context.so.1.85.0
+_deps/boost-build/libs/log/libboost_log_setup.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libboost_log_setup.so"
 	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/log && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boost_log_setup.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/log && $(CMAKE_COMMAND) -E cmake_symlink_library libboost_log_setup.so.1.85.0 libboost_log_setup.so.1.85.0 libboost_log_setup.so
+
+_deps/boost-build/libs/log/libboost_log_setup.so: _deps/boost-build/libs/log/libboost_log_setup.so.1.85.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/boost-build/libs/log/libboost_log_setup.so
 
 # Rule to build all files generated by this target.
-_deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/build: _deps/boost-build/libs/log/libboost_log_setup.a
+_deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/build: _deps/boost-build/libs/log/libboost_log_setup.so
 .PHONY : _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/build
 
 _deps/boost-build/libs/log/CMakeFiles/boost_log_setup.dir/clean:

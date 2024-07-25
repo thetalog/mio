@@ -20,8 +20,25 @@ FetchContent_Declare(
     GIT_TAG        boost-1.85.0
 )
 
+FetchContent_Declare(
+    rtaudio
+    GIT_REPOSITORY https://github.com/rtaudio/rtaudio.git
+    GIT_TAG        4.1.2
+)
+
+FetchContent_Declare(
+    sndfile
+    GIT_REPOSITORY https://github.com/libsndfile/libsndfile.git
+    GIT_TAG        1.2.2
+)
+
 # Make the library available
-FetchContent_MakeAvailable(fmt boost)
+FetchContent_MakeAvailable(fmt boost rtaudio sndfile)
+
+# Include directories
+include_directories(${CMAKE_BINARY_DIR}/_deps/libsndfile-src/include)  # Add RtAudio include path
+include_directories(${CMAKE_BINARY_DIR}/_deps/rtaudio-src)  # Add libsndfile include path
+
 
 include_directories(${CMAKE_BINARY_DIR})
 
@@ -35,4 +52,4 @@ set_target_properties(signaling_server.exe PROPERTIES
 )
 
 # Link the library to your target
-target_link_libraries(signaling_server.exe PRIVATE fmt::fmt Boost::asio Boost::beast)
+target_link_libraries(signaling_server.exe PRIVATE fmt::fmt Boost::asio Boost::beast rtaudio sndfile)

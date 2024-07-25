@@ -21,8 +21,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_program_options.dir/src/variables_map.cpp.o.d"
   "CMakeFiles/boost_program_options.dir/src/winmain.cpp.o"
   "CMakeFiles/boost_program_options.dir/src/winmain.cpp.o.d"
-  "libboost_program_options.a"
   "libboost_program_options.pdb"
+  "libboost_program_options.so"
+  "libboost_program_options.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -92,12 +92,15 @@ signaling_server_exe_EXTERNAL_OBJECTS =
 
 output/signaling_server.exe: CMakeFiles/signaling_server.exe.dir/src/main.cpp.o
 output/signaling_server.exe: CMakeFiles/signaling_server.exe.dir/build.make
-output/signaling_server.exe: _deps/fmt-build/libfmt.a
-output/signaling_server.exe: _deps/boost-build/libs/coroutine/libboost_coroutine.a
-output/signaling_server.exe: _deps/boost-build/libs/context/libboost_context.a
-output/signaling_server.exe: _deps/boost-build/libs/date_time/libboost_date_time.a
+output/signaling_server.exe: _deps/fmt-build/libfmt.so.9.1.0
+output/signaling_server.exe: _deps/rtaudio-build/librtaudio.so
+output/signaling_server.exe: _deps/sndfile-build/libsndfile.so.1.0.37
+output/signaling_server.exe: _deps/boost-build/libs/coroutine/libboost_coroutine.so.1.85.0
+output/signaling_server.exe: _deps/boost-build/libs/context/libboost_context.so.1.85.0
+output/signaling_server.exe: _deps/boost-build/libs/date_time/libboost_date_time.so.1.85.0
 output/signaling_server.exe: _deps/boost-build/libs/exception/libboost_exception.a
-output/signaling_server.exe: _deps/boost-build/libs/container/libboost_container.a
+output/signaling_server.exe: _deps/boost-build/libs/container/libboost_container.so.1.85.0
+output/signaling_server.exe: /usr/lib/x86_64-linux-gnu/libasound.so
 output/signaling_server.exe: CMakeFiles/signaling_server.exe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable output/signaling_server.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/signaling_server.exe.dir/link.txt --verbose=$(VERBOSE)

@@ -11,8 +11,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_nowide.dir/src/iostream.cpp.o.d"
   "CMakeFiles/boost_nowide.dir/src/stat.cpp.o"
   "CMakeFiles/boost_nowide.dir/src/stat.cpp.o.d"
-  "libboost_nowide.a"
   "libboost_nowide.pdb"
+  "libboost_nowide.so"
+  "libboost_nowide.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

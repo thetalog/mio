@@ -17,8 +17,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_filesystem.dir/src/unique_path.cpp.o.d"
   "CMakeFiles/boost_filesystem.dir/src/utf8_codecvt_facet.cpp.o"
   "CMakeFiles/boost_filesystem.dir/src/utf8_codecvt_facet.cpp.o.d"
-  "libboost_filesystem.a"
   "libboost_filesystem.pdb"
+  "libboost_filesystem.so"
+  "libboost_filesystem.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

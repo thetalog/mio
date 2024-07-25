@@ -4,8 +4,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_context.dir/src/asm/ontop_x86_64_sysv_elf_gas.S.o"
   "CMakeFiles/boost_context.dir/src/posix/stack_traits.cpp.o"
   "CMakeFiles/boost_context.dir/src/posix/stack_traits.cpp.o.d"
-  "libboost_context.a"
   "libboost_context.pdb"
+  "libboost_context.so"
+  "libboost_context.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

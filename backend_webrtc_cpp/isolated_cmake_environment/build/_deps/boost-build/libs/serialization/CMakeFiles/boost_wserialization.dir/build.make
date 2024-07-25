@@ -270,27 +270,37 @@ boost_wserialization_OBJECTS = \
 # External object files for target boost_wserialization
 boost_wserialization_EXTERNAL_OBJECTS =
 
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/basic_text_wiprimitive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/basic_text_woprimitive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/binary_wiarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/binary_woarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/polymorphic_text_wiarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/polymorphic_text_woarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/polymorphic_xml_wiarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/polymorphic_xml_woarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/text_wiarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/text_woarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/xml_wgrammar.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/xml_wiarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/xml_woarchive.cpp.o
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/build.make
-_deps/boost-build/libs/serialization/libboost_wserialization.a: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libboost_wserialization.a"
-	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/serialization && $(CMAKE_COMMAND) -P CMakeFiles/boost_wserialization.dir/cmake_clean_target.cmake
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/basic_text_wiprimitive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/basic_text_woprimitive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/binary_wiarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/binary_woarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/polymorphic_text_wiarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/polymorphic_text_woarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/polymorphic_xml_wiarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/polymorphic_xml_woarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/text_wiarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/text_woarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/xml_wgrammar.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/xml_wiarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/src/xml_woarchive.cpp.o
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/build.make
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/libboost_serialization.so.1.85.0
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/thread/libboost_thread.so.1.85.0
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/atomic/libboost_atomic.so.1.85.0
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/chrono/libboost_chrono.so.1.85.0
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/date_time/libboost_date_time.so.1.85.0
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/container/libboost_container.so.1.85.0
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/exception/libboost_exception.a
+_deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0: _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library libboost_wserialization.so"
 	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/serialization && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boost_wserialization.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/serialization && $(CMAKE_COMMAND) -E cmake_symlink_library libboost_wserialization.so.1.85.0 libboost_wserialization.so.1.85.0 libboost_wserialization.so
+
+_deps/boost-build/libs/serialization/libboost_wserialization.so: _deps/boost-build/libs/serialization/libboost_wserialization.so.1.85.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/boost-build/libs/serialization/libboost_wserialization.so
 
 # Rule to build all files generated by this target.
-_deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/build: _deps/boost-build/libs/serialization/libboost_wserialization.a
+_deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/build: _deps/boost-build/libs/serialization/libboost_wserialization.so
 .PHONY : _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/build
 
 _deps/boost-build/libs/serialization/CMakeFiles/boost_wserialization.dir/clean:

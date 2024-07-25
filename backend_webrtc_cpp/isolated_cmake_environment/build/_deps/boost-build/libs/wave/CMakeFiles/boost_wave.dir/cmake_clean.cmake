@@ -23,8 +23,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_wave.dir/src/token_ids.cpp.o.d"
   "CMakeFiles/boost_wave.dir/src/wave_config_constant.cpp.o"
   "CMakeFiles/boost_wave.dir/src/wave_config_constant.cpp.o.d"
-  "libboost_wave.a"
   "libboost_wave.pdb"
+  "libboost_wave.so"
+  "libboost_wave.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -37,8 +37,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_unit_test_framework.dir/src/xml_log_formatter.cpp.o.d"
   "CMakeFiles/boost_unit_test_framework.dir/src/xml_report_formatter.cpp.o"
   "CMakeFiles/boost_unit_test_framework.dir/src/xml_report_formatter.cpp.o.d"
-  "libboost_unit_test_framework.a"
   "libboost_unit_test_framework.pdb"
+  "libboost_unit_test_framework.so"
+  "libboost_unit_test_framework.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

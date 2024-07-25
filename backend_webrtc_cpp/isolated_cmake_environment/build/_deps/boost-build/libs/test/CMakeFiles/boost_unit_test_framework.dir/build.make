@@ -360,33 +360,37 @@ boost_unit_test_framework_OBJECTS = \
 # External object files for target boost_unit_test_framework
 boost_unit_test_framework_EXTERNAL_OBJECTS =
 
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/compiler_log_formatter.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/debug.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/decorator.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/execution_monitor.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/framework.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/junit_log_formatter.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/plain_report_formatter.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/progress_monitor.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/results_collector.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/results_reporter.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/test_framework_init_observer.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/test_tools.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/test_tree.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/unit_test_log.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/unit_test_main.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/unit_test_monitor.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/unit_test_parameters.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/xml_log_formatter.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/xml_report_formatter.cpp.o
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/build.make
-_deps/boost-build/libs/test/libboost_unit_test_framework.a: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX static library libboost_unit_test_framework.a"
-	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/test && $(CMAKE_COMMAND) -P CMakeFiles/boost_unit_test_framework.dir/cmake_clean_target.cmake
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/compiler_log_formatter.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/debug.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/decorator.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/execution_monitor.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/framework.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/junit_log_formatter.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/plain_report_formatter.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/progress_monitor.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/results_collector.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/results_reporter.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/test_framework_init_observer.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/test_tools.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/test_tree.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/unit_test_log.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/unit_test_main.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/unit_test_monitor.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/unit_test_parameters.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/xml_log_formatter.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/src/xml_report_formatter.cpp.o
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/build.make
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/exception/libboost_exception.a
+_deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0: _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX shared library libboost_unit_test_framework.so"
 	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boost_unit_test_framework.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/test && $(CMAKE_COMMAND) -E cmake_symlink_library libboost_unit_test_framework.so.1.85.0 libboost_unit_test_framework.so.1.85.0 libboost_unit_test_framework.so
+
+_deps/boost-build/libs/test/libboost_unit_test_framework.so: _deps/boost-build/libs/test/libboost_unit_test_framework.so.1.85.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/boost-build/libs/test/libboost_unit_test_framework.so
 
 # Rule to build all files generated by this target.
-_deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/build: _deps/boost-build/libs/test/libboost_unit_test_framework.a
+_deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/build: _deps/boost-build/libs/test/libboost_unit_test_framework.so
 .PHONY : _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/build
 
 _deps/boost-build/libs/test/CMakeFiles/boost_unit_test_framework.dir/clean:

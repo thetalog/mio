@@ -25,8 +25,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_wserialization.dir/src/xml_wiarchive.cpp.o.d"
   "CMakeFiles/boost_wserialization.dir/src/xml_woarchive.cpp.o"
   "CMakeFiles/boost_wserialization.dir/src/xml_woarchive.cpp.o.d"
-  "libboost_wserialization.a"
   "libboost_wserialization.pdb"
+  "libboost_wserialization.so"
+  "libboost_wserialization.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

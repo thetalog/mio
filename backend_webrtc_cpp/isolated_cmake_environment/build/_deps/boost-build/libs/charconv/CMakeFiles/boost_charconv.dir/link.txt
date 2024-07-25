@@ -1,2 +1,1 @@
-/usr/bin/ar qc libboost_charconv.a CMakeFiles/boost_charconv.dir/src/from_chars.cpp.o CMakeFiles/boost_charconv.dir/src/to_chars.cpp.o
-/usr/bin/ranlib libboost_charconv.a
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libboost_charconv.so.1.85.0 -o libboost_charconv.so.1.85.0 CMakeFiles/boost_charconv.dir/src/from_chars.cpp.o CMakeFiles/boost_charconv.dir/src/to_chars.cpp.o 

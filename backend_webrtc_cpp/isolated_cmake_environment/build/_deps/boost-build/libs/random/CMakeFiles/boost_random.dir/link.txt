@@ -1,2 +1,1 @@
-/usr/bin/ar qc libboost_random.a CMakeFiles/boost_random.dir/src/random_device.cpp.o
-/usr/bin/ranlib libboost_random.a
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libboost_random.so.1.85.0 -o libboost_random.so.1.85.0 CMakeFiles/boost_random.dir/src/random_device.cpp.o 

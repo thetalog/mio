@@ -17,8 +17,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_log_setup.dir/src/setup/parser_utils.cpp.o.d"
   "CMakeFiles/boost_log_setup.dir/src/setup/settings_parser.cpp.o"
   "CMakeFiles/boost_log_setup.dir/src/setup/settings_parser.cpp.o.d"
-  "libboost_log_setup.a"
   "libboost_log_setup.pdb"
+  "libboost_log_setup.so"
+  "libboost_log_setup.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

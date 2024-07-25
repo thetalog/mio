@@ -31,8 +31,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_fiber.dir/src/timed_mutex.cpp.o.d"
   "CMakeFiles/boost_fiber.dir/src/waker.cpp.o"
   "CMakeFiles/boost_fiber.dir/src/waker.cpp.o.d"
-  "libboost_fiber.a"
   "libboost_fiber.pdb"
+  "libboost_fiber.so"
+  "libboost_fiber.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

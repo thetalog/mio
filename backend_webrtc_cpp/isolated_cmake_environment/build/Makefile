@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmak
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -84,6 +104,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -611,6 +676,734 @@ boost_wave/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/build.make _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/build
 .PHONY : boost_wave/fast
 
+#=============================================================================
+# Target rules for targets named Experimental
+
+# Build rule for target.
+Experimental: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Experimental
+.PHONY : Experimental
+
+# fast build rule for target.
+Experimental/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/Experimental.dir/build.make _deps/rtaudio-build/CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
+
+#=============================================================================
+# Target rules for targets named Nightly
+
+# Build rule for target.
+Nightly: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nightly
+.PHONY : Nightly
+
+# fast build rule for target.
+Nightly/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/Nightly.dir/build.make _deps/rtaudio-build/CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
+
+#=============================================================================
+# Target rules for targets named Continuous
+
+# Build rule for target.
+Continuous: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Continuous
+.PHONY : Continuous
+
+# fast build rule for target.
+Continuous/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/Continuous.dir/build.make _deps/rtaudio-build/CMakeFiles/Continuous.dir/build
+.PHONY : Continuous/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemoryCheck
+
+# Build rule for target.
+NightlyMemoryCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemoryCheck
+.PHONY : NightlyMemoryCheck
+
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
+
+#=============================================================================
+# Target rules for targets named NightlyStart
+
+# Build rule for target.
+NightlyStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyStart
+.PHONY : NightlyStart
+
+# fast build rule for target.
+NightlyStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlyStart.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
+
+#=============================================================================
+# Target rules for targets named NightlyUpdate
+
+# Build rule for target.
+NightlyUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyUpdate
+.PHONY : NightlyUpdate
+
+# fast build rule for target.
+NightlyUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
+
+#=============================================================================
+# Target rules for targets named NightlyConfigure
+
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
+
+#=============================================================================
+# Target rules for targets named NightlyBuild
+
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyBuild
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlyBuild.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+#=============================================================================
+# Target rules for targets named NightlyTest
+
+# Build rule for target.
+NightlyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyTest
+.PHONY : NightlyTest
+
+# fast build rule for target.
+NightlyTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlyTest.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlyTest.dir/build
+.PHONY : NightlyTest/fast
+
+#=============================================================================
+# Target rules for targets named NightlyCoverage
+
+# Build rule for target.
+NightlyCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyCoverage
+.PHONY : NightlyCoverage
+
+# fast build rule for target.
+NightlyCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlyCoverage.dir/build
+.PHONY : NightlyCoverage/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemCheck
+
+# Build rule for target.
+NightlyMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemCheck
+.PHONY : NightlyMemCheck
+
+# fast build rule for target.
+NightlyMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlyMemCheck.dir/build
+.PHONY : NightlyMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named NightlySubmit
+
+# Build rule for target.
+NightlySubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlySubmit
+.PHONY : NightlySubmit
+
+# fast build rule for target.
+NightlySubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/NightlySubmit.dir/build.make _deps/rtaudio-build/CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalStart
+
+# Build rule for target.
+ExperimentalStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalStart
+.PHONY : ExperimentalStart
+
+# fast build rule for target.
+ExperimentalStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/rtaudio-build/CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalUpdate
+
+# Build rule for target.
+ExperimentalUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalUpdate
+.PHONY : ExperimentalUpdate
+
+# fast build rule for target.
+ExperimentalUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/rtaudio-build/CMakeFiles/ExperimentalUpdate.dir/build
+.PHONY : ExperimentalUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalConfigure
+
+# Build rule for target.
+ExperimentalConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalConfigure
+.PHONY : ExperimentalConfigure
+
+# fast build rule for target.
+ExperimentalConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/rtaudio-build/CMakeFiles/ExperimentalConfigure.dir/build
+.PHONY : ExperimentalConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalBuild
+
+# Build rule for target.
+ExperimentalBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalBuild
+.PHONY : ExperimentalBuild
+
+# fast build rule for target.
+ExperimentalBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/rtaudio-build/CMakeFiles/ExperimentalBuild.dir/build
+.PHONY : ExperimentalBuild/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalTest
+
+# Build rule for target.
+ExperimentalTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalTest
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/rtaudio-build/CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalCoverage
+
+# Build rule for target.
+ExperimentalCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalCoverage
+.PHONY : ExperimentalCoverage
+
+# fast build rule for target.
+ExperimentalCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/rtaudio-build/CMakeFiles/ExperimentalCoverage.dir/build
+.PHONY : ExperimentalCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalMemCheck
+
+# Build rule for target.
+ExperimentalMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalMemCheck
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/rtaudio-build/CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalSubmit
+
+# Build rule for target.
+ExperimentalSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalSubmit
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/rtaudio-build/CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousStart
+
+# Build rule for target.
+ContinuousStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousStart
+.PHONY : ContinuousStart
+
+# fast build rule for target.
+ContinuousStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ContinuousStart.dir/build.make _deps/rtaudio-build/CMakeFiles/ContinuousStart.dir/build
+.PHONY : ContinuousStart/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousUpdate
+
+# Build rule for target.
+ContinuousUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousUpdate
+.PHONY : ContinuousUpdate
+
+# fast build rule for target.
+ContinuousUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/rtaudio-build/CMakeFiles/ContinuousUpdate.dir/build
+.PHONY : ContinuousUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousConfigure
+
+# Build rule for target.
+ContinuousConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousConfigure
+.PHONY : ContinuousConfigure
+
+# fast build rule for target.
+ContinuousConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/rtaudio-build/CMakeFiles/ContinuousConfigure.dir/build
+.PHONY : ContinuousConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousBuild
+
+# Build rule for target.
+ContinuousBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousBuild
+.PHONY : ContinuousBuild
+
+# fast build rule for target.
+ContinuousBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/rtaudio-build/CMakeFiles/ContinuousBuild.dir/build
+.PHONY : ContinuousBuild/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousTest
+
+# Build rule for target.
+ContinuousTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousTest
+.PHONY : ContinuousTest
+
+# fast build rule for target.
+ContinuousTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ContinuousTest.dir/build.make _deps/rtaudio-build/CMakeFiles/ContinuousTest.dir/build
+.PHONY : ContinuousTest/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousCoverage
+
+# Build rule for target.
+ContinuousCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousCoverage
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/rtaudio-build/CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousMemCheck
+
+# Build rule for target.
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/rtaudio-build/CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousSubmit
+
+# Build rule for target.
+ContinuousSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousSubmit
+.PHONY : ContinuousSubmit
+
+# fast build rule for target.
+ContinuousSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/rtaudio-build/CMakeFiles/ContinuousSubmit.dir/build
+.PHONY : ContinuousSubmit/fast
+
+#=============================================================================
+# Target rules for targets named rtaudio
+
+# Build rule for target.
+rtaudio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtaudio
+.PHONY : rtaudio
+
+# fast build rule for target.
+rtaudio/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/rtaudio.dir/build.make _deps/rtaudio-build/CMakeFiles/rtaudio.dir/build
+.PHONY : rtaudio/fast
+
+#=============================================================================
+# Target rules for targets named rtaudio_static
+
+# Build rule for target.
+rtaudio_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtaudio_static
+.PHONY : rtaudio_static
+
+# fast build rule for target.
+rtaudio_static/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/CMakeFiles/rtaudio_static.dir/build.make _deps/rtaudio-build/CMakeFiles/rtaudio_static.dir/build
+.PHONY : rtaudio_static/fast
+
+#=============================================================================
+# Target rules for targets named audioprobe
+
+# Build rule for target.
+audioprobe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 audioprobe
+.PHONY : audioprobe
+
+# fast build rule for target.
+audioprobe/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/tests/CMakeFiles/audioprobe.dir/build.make _deps/rtaudio-build/tests/CMakeFiles/audioprobe.dir/build
+.PHONY : audioprobe/fast
+
+#=============================================================================
+# Target rules for targets named playsaw
+
+# Build rule for target.
+playsaw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 playsaw
+.PHONY : playsaw
+
+# fast build rule for target.
+playsaw/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/tests/CMakeFiles/playsaw.dir/build.make _deps/rtaudio-build/tests/CMakeFiles/playsaw.dir/build
+.PHONY : playsaw/fast
+
+#=============================================================================
+# Target rules for targets named playraw
+
+# Build rule for target.
+playraw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 playraw
+.PHONY : playraw
+
+# fast build rule for target.
+playraw/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/tests/CMakeFiles/playraw.dir/build.make _deps/rtaudio-build/tests/CMakeFiles/playraw.dir/build
+.PHONY : playraw/fast
+
+#=============================================================================
+# Target rules for targets named record
+
+# Build rule for target.
+record: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 record
+.PHONY : record
+
+# fast build rule for target.
+record/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/tests/CMakeFiles/record.dir/build.make _deps/rtaudio-build/tests/CMakeFiles/record.dir/build
+.PHONY : record/fast
+
+#=============================================================================
+# Target rules for targets named duplex
+
+# Build rule for target.
+duplex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 duplex
+.PHONY : duplex
+
+# fast build rule for target.
+duplex/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/tests/CMakeFiles/duplex.dir/build.make _deps/rtaudio-build/tests/CMakeFiles/duplex.dir/build
+.PHONY : duplex/fast
+
+#=============================================================================
+# Target rules for targets named testall
+
+# Build rule for target.
+testall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testall
+.PHONY : testall
+
+# fast build rule for target.
+testall/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/tests/CMakeFiles/testall.dir/build.make _deps/rtaudio-build/tests/CMakeFiles/testall.dir/build
+.PHONY : testall/fast
+
+#=============================================================================
+# Target rules for targets named teststops
+
+# Build rule for target.
+teststops: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teststops
+.PHONY : teststops
+
+# fast build rule for target.
+teststops/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/rtaudio-build/tests/CMakeFiles/teststops.dir/build.make _deps/rtaudio-build/tests/CMakeFiles/teststops.dir/build
+.PHONY : teststops/fast
+
+#=============================================================================
+# Target rules for targets named sndfile
+
+# Build rule for target.
+sndfile: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile
+.PHONY : sndfile
+
+# fast build rule for target.
+sndfile/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile.dir/build
+.PHONY : sndfile/fast
+
+#=============================================================================
+# Target rules for targets named GENFILES
+
+# Build rule for target.
+GENFILES: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GENFILES
+.PHONY : GENFILES
+
+# fast build rule for target.
+GENFILES/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/GENFILES.dir/build.make _deps/sndfile-build/CMakeFiles/GENFILES.dir/build
+.PHONY : GENFILES/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-info
+
+# Build rule for target.
+sndfile-info: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-info
+.PHONY : sndfile-info
+
+# fast build rule for target.
+sndfile-info/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-info.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-info.dir/build
+.PHONY : sndfile-info/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-play
+
+# Build rule for target.
+sndfile-play: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-play
+.PHONY : sndfile-play
+
+# fast build rule for target.
+sndfile-play/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-play.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-play.dir/build
+.PHONY : sndfile-play/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-convert
+
+# Build rule for target.
+sndfile-convert: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-convert
+.PHONY : sndfile-convert
+
+# fast build rule for target.
+sndfile-convert/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-convert.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-convert.dir/build
+.PHONY : sndfile-convert/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-cmp
+
+# Build rule for target.
+sndfile-cmp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-cmp
+.PHONY : sndfile-cmp
+
+# fast build rule for target.
+sndfile-cmp/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-cmp.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-cmp.dir/build
+.PHONY : sndfile-cmp/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-metadata-set
+
+# Build rule for target.
+sndfile-metadata-set: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-metadata-set
+.PHONY : sndfile-metadata-set
+
+# fast build rule for target.
+sndfile-metadata-set/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-metadata-set.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-metadata-set.dir/build
+.PHONY : sndfile-metadata-set/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-metadata-get
+
+# Build rule for target.
+sndfile-metadata-get: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-metadata-get
+.PHONY : sndfile-metadata-get
+
+# fast build rule for target.
+sndfile-metadata-get/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-metadata-get.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-metadata-get.dir/build
+.PHONY : sndfile-metadata-get/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-interleave
+
+# Build rule for target.
+sndfile-interleave: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-interleave
+.PHONY : sndfile-interleave
+
+# fast build rule for target.
+sndfile-interleave/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-interleave.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-interleave.dir/build
+.PHONY : sndfile-interleave/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-deinterleave
+
+# Build rule for target.
+sndfile-deinterleave: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-deinterleave
+.PHONY : sndfile-deinterleave
+
+# fast build rule for target.
+sndfile-deinterleave/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-deinterleave.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-deinterleave.dir/build
+.PHONY : sndfile-deinterleave/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-concat
+
+# Build rule for target.
+sndfile-concat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-concat
+.PHONY : sndfile-concat
+
+# fast build rule for target.
+sndfile-concat/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-concat.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-concat.dir/build
+.PHONY : sndfile-concat/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-salvage
+
+# Build rule for target.
+sndfile-salvage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-salvage
+.PHONY : sndfile-salvage
+
+# fast build rule for target.
+sndfile-salvage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-salvage.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-salvage.dir/build
+.PHONY : sndfile-salvage/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-to-text
+
+# Build rule for target.
+sndfile-to-text: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-to-text
+.PHONY : sndfile-to-text
+
+# fast build rule for target.
+sndfile-to-text/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-to-text.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-to-text.dir/build
+.PHONY : sndfile-to-text/fast
+
+#=============================================================================
+# Target rules for targets named sndfile-loopify
+
+# Build rule for target.
+sndfile-loopify: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfile-loopify
+.PHONY : sndfile-loopify
+
+# fast build rule for target.
+sndfile-loopify/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfile-loopify.dir/build.make _deps/sndfile-build/CMakeFiles/sndfile-loopify.dir/build
+.PHONY : sndfile-loopify/fast
+
+#=============================================================================
+# Target rules for targets named make_sine
+
+# Build rule for target.
+make_sine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 make_sine
+.PHONY : make_sine
+
+# fast build rule for target.
+make_sine/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/make_sine.dir/build.make _deps/sndfile-build/CMakeFiles/make_sine.dir/build
+.PHONY : make_sine/fast
+
+#=============================================================================
+# Target rules for targets named sfprocess
+
+# Build rule for target.
+sfprocess: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfprocess
+.PHONY : sfprocess
+
+# fast build rule for target.
+sfprocess/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sfprocess.dir/build.make _deps/sndfile-build/CMakeFiles/sfprocess.dir/build
+.PHONY : sfprocess/fast
+
+#=============================================================================
+# Target rules for targets named list_formats
+
+# Build rule for target.
+list_formats: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 list_formats
+.PHONY : list_formats
+
+# fast build rule for target.
+list_formats/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/list_formats.dir/build.make _deps/sndfile-build/CMakeFiles/list_formats.dir/build
+.PHONY : list_formats/fast
+
+#=============================================================================
+# Target rules for targets named generate
+
+# Build rule for target.
+generate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generate
+.PHONY : generate
+
+# fast build rule for target.
+generate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/generate.dir/build.make _deps/sndfile-build/CMakeFiles/generate.dir/build
+.PHONY : generate/fast
+
+#=============================================================================
+# Target rules for targets named sndfilehandle
+
+# Build rule for target.
+sndfilehandle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sndfilehandle
+.PHONY : sndfilehandle
+
+# fast build rule for target.
+sndfilehandle/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sndfile-build/CMakeFiles/sndfilehandle.dir/build.make _deps/sndfile-build/CMakeFiles/sndfilehandle.dir/build
+.PHONY : sndfilehandle/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -642,7 +1435,43 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... Continuous"
+	@echo "... ContinuousBuild"
+	@echo "... ContinuousConfigure"
+	@echo "... ContinuousCoverage"
+	@echo "... ContinuousMemCheck"
+	@echo "... ContinuousStart"
+	@echo "... ContinuousSubmit"
+	@echo "... ContinuousTest"
+	@echo "... ContinuousUpdate"
+	@echo "... Experimental"
+	@echo "... ExperimentalBuild"
+	@echo "... ExperimentalConfigure"
+	@echo "... ExperimentalCoverage"
+	@echo "... ExperimentalMemCheck"
+	@echo "... ExperimentalStart"
+	@echo "... ExperimentalSubmit"
+	@echo "... ExperimentalTest"
+	@echo "... ExperimentalUpdate"
+	@echo "... GENFILES"
+	@echo "... Nightly"
+	@echo "... NightlyBuild"
+	@echo "... NightlyConfigure"
+	@echo "... NightlyCoverage"
+	@echo "... NightlyMemCheck"
+	@echo "... NightlyMemoryCheck"
+	@echo "... NightlyStart"
+	@echo "... NightlySubmit"
+	@echo "... NightlyTest"
+	@echo "... NightlyUpdate"
+	@echo "... audioprobe"
 	@echo "... boost_atomic"
 	@echo "... boost_charconv"
 	@echo "... boost_chrono"
@@ -679,8 +1508,34 @@ help:
 	@echo "... boost_url"
 	@echo "... boost_wave"
 	@echo "... boost_wserialization"
+	@echo "... duplex"
 	@echo "... fmt"
+	@echo "... generate"
+	@echo "... list_formats"
+	@echo "... make_sine"
+	@echo "... playraw"
+	@echo "... playsaw"
+	@echo "... record"
+	@echo "... rtaudio"
+	@echo "... rtaudio_static"
+	@echo "... sfprocess"
 	@echo "... signaling_server.exe"
+	@echo "... sndfile"
+	@echo "... sndfile-cmp"
+	@echo "... sndfile-concat"
+	@echo "... sndfile-convert"
+	@echo "... sndfile-deinterleave"
+	@echo "... sndfile-info"
+	@echo "... sndfile-interleave"
+	@echo "... sndfile-loopify"
+	@echo "... sndfile-metadata-get"
+	@echo "... sndfile-metadata-set"
+	@echo "... sndfile-play"
+	@echo "... sndfile-salvage"
+	@echo "... sndfile-to-text"
+	@echo "... sndfilehandle"
+	@echo "... testall"
+	@echo "... teststops"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

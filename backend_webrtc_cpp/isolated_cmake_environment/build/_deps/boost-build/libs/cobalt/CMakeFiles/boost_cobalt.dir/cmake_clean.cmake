@@ -13,8 +13,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_cobalt.dir/src/this_thread.cpp.o.d"
   "CMakeFiles/boost_cobalt.dir/src/thread.cpp.o"
   "CMakeFiles/boost_cobalt.dir/src/thread.cpp.o.d"
-  "libboost_cobalt.a"
   "libboost_cobalt.pdb"
+  "libboost_cobalt.so"
+  "libboost_cobalt.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

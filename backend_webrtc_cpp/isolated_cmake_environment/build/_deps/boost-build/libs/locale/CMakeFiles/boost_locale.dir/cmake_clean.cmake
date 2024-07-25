@@ -51,8 +51,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_locale.dir/src/boost/locale/util/info.cpp.o.d"
   "CMakeFiles/boost_locale.dir/src/boost/locale/util/locale_data.cpp.o"
   "CMakeFiles/boost_locale.dir/src/boost/locale/util/locale_data.cpp.o.d"
-  "libboost_locale.a"
   "libboost_locale.pdb"
+  "libboost_locale.so"
+  "libboost_locale.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -5,8 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_chrono.dir/src/process_cpu_clocks.cpp.o.d"
   "CMakeFiles/boost_chrono.dir/src/thread_clock.cpp.o"
   "CMakeFiles/boost_chrono.dir/src/thread_clock.cpp.o.d"
-  "libboost_chrono.a"
   "libboost_chrono.pdb"
+  "libboost_chrono.so"
+  "libboost_chrono.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

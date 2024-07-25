@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { setCookie } from "cookies-next";
 import Script from "next/script";
+import AudioRecorder from "../../AudioRecorder";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -44,6 +45,8 @@ export default function Login() {
         defer
       ></Script>
       <h3>This is login page!</h3>
+      <h1>Audio Recorder</h1>
+      <AudioRecorder />
       <form onSubmit={handleSubmit}>
         <input
           type="email"

@@ -615,50 +615,64 @@ boost_log_OBJECTS = \
 # External object files for target boost_log
 boost_log_EXTERNAL_OBJECTS =
 
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/attribute_name.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/attribute_set.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/attribute_value_set.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/code_conversion.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/core.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/record_ostream.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/severity_level.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/global_logger_storage.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/named_scope.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/process_name.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/process_id.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/thread_id.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/timer.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/exceptions.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/default_attribute_names.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/default_sink.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/text_ostream_backend.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/text_file_backend.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/text_multifile_backend.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/thread_specific.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/once_block.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/timestamp.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/threadsafe_queue.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/event.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/trivial.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/spirit_encoding.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/format_parser.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/date_time_format_parser.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/named_scope_format_parser.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/permissions.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/dump.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/syslog_backend.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/posix/object_name.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/posix/ipc_reliable_message_queue.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/dump_ssse3.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/dump_avx2.cpp.o
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/build.make
-_deps/boost-build/libs/log/libboost_log.a: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX static library libboost_log.a"
-	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/log && $(CMAKE_COMMAND) -P CMakeFiles/boost_log.dir/cmake_clean_target.cmake
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/attribute_name.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/attribute_set.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/attribute_value_set.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/code_conversion.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/core.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/record_ostream.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/severity_level.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/global_logger_storage.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/named_scope.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/process_name.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/process_id.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/thread_id.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/timer.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/exceptions.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/default_attribute_names.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/default_sink.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/text_ostream_backend.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/text_file_backend.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/text_multifile_backend.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/thread_specific.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/once_block.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/timestamp.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/threadsafe_queue.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/event.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/trivial.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/spirit_encoding.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/format_parser.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/date_time_format_parser.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/named_scope_format_parser.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/permissions.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/dump.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/syslog_backend.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/posix/object_name.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/posix/ipc_reliable_message_queue.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/dump_ssse3.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/src/dump_avx2.cpp.o
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/build.make
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/filesystem/libboost_filesystem.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/exception/libboost_exception.a
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/random/libboost_random.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/thread/libboost_thread.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/coroutine/libboost_coroutine.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/context/libboost_context.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/date_time/libboost_date_time.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/container/libboost_container.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/exception/libboost_exception.a
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/atomic/libboost_atomic.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/chrono/libboost_chrono.so.1.85.0
+_deps/boost-build/libs/log/libboost_log.so.1.85.0: _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX shared library libboost_log.so"
 	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/log && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boost_log.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/log && $(CMAKE_COMMAND) -E cmake_symlink_library libboost_log.so.1.85.0 libboost_log.so.1.85.0 libboost_log.so
+
+_deps/boost-build/libs/log/libboost_log.so: _deps/boost-build/libs/log/libboost_log.so.1.85.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/boost-build/libs/log/libboost_log.so
 
 # Rule to build all files generated by this target.
-_deps/boost-build/libs/log/CMakeFiles/boost_log.dir/build: _deps/boost-build/libs/log/libboost_log.a
+_deps/boost-build/libs/log/CMakeFiles/boost_log.dir/build: _deps/boost-build/libs/log/libboost_log.so
 .PHONY : _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/build
 
 _deps/boost-build/libs/log/CMakeFiles/boost_log.dir/clean:

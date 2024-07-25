@@ -13,8 +13,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_container.dir/src/synchronized_pool_resource.cpp.o.d"
   "CMakeFiles/boost_container.dir/src/unsynchronized_pool_resource.cpp.o"
   "CMakeFiles/boost_container.dir/src/unsynchronized_pool_resource.cpp.o.d"
-  "libboost_container.a"
   "libboost_container.pdb"
+  "libboost_container.so"
+  "libboost_container.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

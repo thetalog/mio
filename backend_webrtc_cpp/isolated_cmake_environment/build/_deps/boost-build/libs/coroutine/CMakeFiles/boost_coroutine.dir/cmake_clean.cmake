@@ -5,8 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_coroutine.dir/src/exceptions.cpp.o.d"
   "CMakeFiles/boost_coroutine.dir/src/posix/stack_traits.cpp.o"
   "CMakeFiles/boost_coroutine.dir/src/posix/stack_traits.cpp.o.d"
-  "libboost_coroutine.a"
   "libboost_coroutine.pdb"
+  "libboost_coroutine.so"
+  "libboost_coroutine.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

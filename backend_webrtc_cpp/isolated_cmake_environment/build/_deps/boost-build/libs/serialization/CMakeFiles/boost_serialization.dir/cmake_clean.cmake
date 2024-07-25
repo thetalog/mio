@@ -69,8 +69,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_serialization.dir/src/xml_iarchive.cpp.o.d"
   "CMakeFiles/boost_serialization.dir/src/xml_oarchive.cpp.o"
   "CMakeFiles/boost_serialization.dir/src/xml_oarchive.cpp.o.d"
-  "libboost_serialization.a"
   "libboost_serialization.pdb"
+  "libboost_serialization.so"
+  "libboost_serialization.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -255,26 +255,37 @@ boost_wave_OBJECTS = \
 # External object files for target boost_wave
 boost_wave_EXTERNAL_OBJECTS =
 
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_re2c_lexer.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/token_ids.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_defined_grammar.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_cpp_literalgrs.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_cpp_exprgrammar.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_has_include_grammar.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_predef_macros.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_re2c_lexer_str.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_cpp_grammar.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/wave_config_constant.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/cpplexer/re2clex/aq.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/cpplexer/re2clex/cpp_re.cpp.o
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/build.make
-_deps/boost-build/libs/wave/libboost_wave.a: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libboost_wave.a"
-	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/wave && $(CMAKE_COMMAND) -P CMakeFiles/boost_wave.dir/cmake_clean_target.cmake
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_re2c_lexer.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/token_ids.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_defined_grammar.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_cpp_literalgrs.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_cpp_exprgrammar.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_has_include_grammar.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_predef_macros.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_re2c_lexer_str.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/instantiate_cpp_grammar.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/wave_config_constant.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/cpplexer/re2clex/aq.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/src/cpplexer/re2clex/cpp_re.cpp.o
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/build.make
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/filesystem/libboost_filesystem.so.1.85.0
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/serialization/libboost_serialization.so.1.85.0
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/thread/libboost_thread.so.1.85.0
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/atomic/libboost_atomic.so.1.85.0
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/chrono/libboost_chrono.so.1.85.0
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/date_time/libboost_date_time.so.1.85.0
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/container/libboost_container.so.1.85.0
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/exception/libboost_exception.a
+_deps/boost-build/libs/wave/libboost_wave.so.1.85.0: _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX shared library libboost_wave.so"
 	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/wave && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boost_wave.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/wave && $(CMAKE_COMMAND) -E cmake_symlink_library libboost_wave.so.1.85.0 libboost_wave.so.1.85.0 libboost_wave.so
+
+_deps/boost-build/libs/wave/libboost_wave.so: _deps/boost-build/libs/wave/libboost_wave.so.1.85.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/boost-build/libs/wave/libboost_wave.so
 
 # Rule to build all files generated by this target.
-_deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/build: _deps/boost-build/libs/wave/libboost_wave.a
+_deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/build: _deps/boost-build/libs/wave/libboost_wave.so
 .PHONY : _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/build
 
 _deps/boost-build/libs/wave/CMakeFiles/boost_wave.dir/clean:

@@ -3,8 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/boost_timer.dir/src/auto_timers_construction.cpp.o.d"
   "CMakeFiles/boost_timer.dir/src/cpu_timer.cpp.o"
   "CMakeFiles/boost_timer.dir/src/cpu_timer.cpp.o.d"
-  "libboost_timer.a"
   "libboost_timer.pdb"
+  "libboost_timer.so"
+  "libboost_timer.so.1.85.0"
 )
 
 # Per-language clean rules from dependency scanning.
