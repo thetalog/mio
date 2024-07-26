@@ -6,12 +6,14 @@ set(CMAKE_CXX_STANDARD 20)
 
 # Set the Boost directory (update this path to your Boost installation path)
 set(BOOST_ROOT "build/include/boost_1_85_0")
+set(JSON_ROOT "${CMAKE_SOURCE_DIR}/build/include/json/include")
 
 # Find Boost
 find_package(Boost 1.85.0 REQUIRED)
 
 # Include Boost headers
 include_directories(${Boost_INCLUDE_DIRS})
+include_directories(${JSON_ROOT})
 
 # Add the executable
 add_executable(main.exe src/main.cpp)

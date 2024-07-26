@@ -4,35 +4,25 @@
 #include <boost/asio.hpp>
 #include <boost/beast.hpp>
 #include <boost/beast/websocket.hpp>
-#include <vector>
-#include <memory>
-#include <nlohmann/json.hpp>
 
 namespace asio = boost::asio;
 namespace beast = boost::beast;
 namespace websocket = beast::websocket;
 
-using json = nlohmann::json;
 using tcp = asio::ip::tcp;
 using websocket_stream = websocket::stream<tcp::socket>;
-
-std::vector<json> sessionVector;
-
-class SignalingServer; // Forward declaration
 
 class Session : public std::enable_shared_from_this<Session>
 {
 public:
-    Session(tcp::socket socket, SignalingServer &server, std::vector<std::shared_ptr<Session>>& allSessions)
-        : ws_(std::move(socket)), allSessions_(allSessions), server_(server) {}
+    Session(tcp::socket socket)
+        : ws_(std::move(socket)) {}
 
     void start()
     {
         ws_.async_accept([self = shared_from_this()](beast::error_code ec)
                          { self->on_accept(ec); });
     }
-
-    ~Session(); // Destructor declaration
 
 private:
     void on_accept(beast::error_code ec)
@@ -75,9 +65,7 @@ private:
         {
             std::string message = beast::buffers_to_string(buffer_.data());
             std::cout << "Received text message: " << message << std::endl;
-            for (auto& session : allSessions_){
-                std::cout << session->port << std::endl;
-            }
+            do_write(message); // Echo the message back
         }
 
         buffer_.consume(bytes_transferred);
@@ -100,10 +88,6 @@ private:
 
     websocket_stream ws_;
     beast::flat_buffer buffer_;
-    SignalingServer &server_; // Reference to the server to manage sessions
-    std::vector<std::shared_ptr<Session>> &allSessions_;
-    std::string ip = ws_.next_layer().remote_endpoint().address().to_string();
-    std::string port = std::to_string(ws_.next_layer().remote_endpoint().port());
 };
 
 class SignalingServer
@@ -115,33 +99,14 @@ public:
         accept();
     }
 
-    void add_session(std::shared_ptr<Session> session)
-    {
-        sessions_.push_back(std::move(session));
-    }
-    
-    std::vector<std::shared_ptr<Session>>& get_sessions(){
-        return sessions_;
-    }
-
-    void remove_session(Session *session_ptr)
-    {
-        sessions_.erase(
-            std::remove_if(sessions_.begin(), sessions_.end(),
-                           [session_ptr](const std::shared_ptr<Session> &session)
-                           { return session.get() == session_ptr; }),
-            sessions_.end());
-    }
-
 private:
     void accept()
     {
         acceptor_.async_accept([this](beast::error_code ec, tcp::socket socket)
                                {
             if (!ec) {
-                auto session = std::make_shared<Session>(std::move(socket), *this, get_sessions());
-                add_session(session);
-                session->start();
+                std::cout << "New connection accepted" << std::endl;
+                std::make_shared<Session>(std::move(socket))->start();
             }
             else {
                 std::cerr << "Accept error: " << ec.message() << std::endl;
@@ -150,13 +115,7 @@ private:
     }
 
     tcp::acceptor acceptor_;
-    std::vector<std::shared_ptr<Session>> sessions_; // Vector to store connected sessions
 };
-
-// Destructor implementation outside of class definition
-Session::~Session() {
-    server_.remove_session(this);
-}
 
 int main()
 {
