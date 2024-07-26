@@ -1,2 +1,2 @@
 backend/node_modules/*
-backend_webrtc_cpp/isolated_cmake_environment/build/*
+# backend_webrtc_cpp/isolated_cmake_environment/build/*
