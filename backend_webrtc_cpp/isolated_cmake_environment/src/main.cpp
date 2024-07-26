@@ -76,7 +76,11 @@ private:
             std::string message = beast::buffers_to_string(buffer_.data());
             std::cout << "Received text message: " << message << std::endl;
             for (auto& session : allSessions_){
-                std::cout << session->port << std::endl;
+                if(ip == session->ip && port == session->port){
+                    continue;
+                } else{
+                    session->do_write(message);
+                }
             }
         }
 
