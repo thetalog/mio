@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libboost_json.so.1.85.0 -o libboost_json.so.1.85.0 CMakeFiles/boost_json.dir/src/src.cpp.o  -Wl,-rpath,/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/_deps/boost-build/libs/container ../container/libboost_container.so.1.85.0 
