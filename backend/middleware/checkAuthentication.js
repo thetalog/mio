@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken")
 const getSession = require("../database/redis/authentication/getSession");
 
-async function checkAuthentication(req, res, next) {
+ checkAuthentication = async (req, res, next) => {
   const authHeaderId = req.headers["authorization"];
   let result = null;
   let decodedToken = null;

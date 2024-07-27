@@ -9,7 +9,7 @@ const createUserTableQuery =
   "CREATE TABLE IF NOT EXISTS users (user_id UUID PRIMARY KEY, email TEXT, displayName TEXT, userName TEXT, dateOfBirth TEXT, password TEXT, created_at TIMESTAMP, updated_at TIMESTAMP);";
 
 const createChannelTableQuery =
-  "CREATE TABLE IF NOT EXISTS channel (channel_id UUID PRIMARY KEY, user_id UUID, channelName TEXT, channelBio TEXT, created_at TIMESTAMP, updated_at TIMESTAMP);";
+  "CREATE TABLE IF NOT EXISTS channel (channel_id UUID PRIMARY KEY, user_id UUID, channelName TEXT, channelBio TEXT, imageStringify TEXT, created_at TIMESTAMP, updated_at TIMESTAMP);";
 
 async function migrate_scylla() {
   try {

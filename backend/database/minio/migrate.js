@@ -14,9 +14,7 @@ const createBucketAsync = async (bucketName, region = 'us-east-1') => {
   
   const createMultipleBuckets = async () => {
     try {
-      await createBucketAsync('bucket1');
-      await createBucketAsync('bucket2');
-      await createBucketAsync('bucket3');
+      await createBucketAsync('mio');
     } catch (err) {
       console.error('Error creating buckets:', err);
     }

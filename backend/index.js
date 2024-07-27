@@ -11,8 +11,8 @@ const channel = require("./api/channel/routes");
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/v1", authentication, channel);
 app.use(checkAuthentication);
+app.use("/api/v1", authentication, channel);
 
 app.listen(PORT, () => {
   console.log(`Backend running on ${PORT}! 🔥`);
