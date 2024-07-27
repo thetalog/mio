@@ -1,13 +1,10 @@
 const minioClient = require("../minio_connection")
 
 // Example: Upload a file to MinIO
-const uploadFile = (bucketName, objectName, filePath) => {
-    minioClient.fPutObject(bucketName, objectName, filePath, (err, etag) => {
-      if (err) {
-        return console.log('Error uploading file:', err);
-      }
-      console.log('File uploaded successfully:', etag);
+const uploadFile = async (bucketName, objectName, image) => {
+    return await minioClient.putObject(bucketName, objectName, image.buffer, image.size, {
+      'Content-Type': image.mimetype
     });
-  };
+  }
 
 module.exports = uploadFile

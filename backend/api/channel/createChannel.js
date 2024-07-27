@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const jwt = require("jsonwebtoken")
 const createChannel = require("../../database/scylla/channel/createChannel");
+const uploadLogo = require("../../database/minio/channel/uploadLogo");
 const multer = require('multer');
 
 // Generate a base64-encoded salt
@@ -22,7 +23,8 @@ router.post("/create-channel",upload.single('image'), async (req, res) => {
   const channelBio = req.body?.channelBio;
   const image = req.file; // Multer stores the uploaded file here
   const imageStringify = image ? image.buffer.toString('base64') : null // Just an example of handling image data
-
+  const minioResponse = await uploadLogo("mio", jwt.verify(req.headers["token"], process.env.HASH_SALT)?.user_id, image)
+  console.log(minioResponse)
   try {
     await createChannel(
       channelName,
