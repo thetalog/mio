@@ -2,7 +2,7 @@ const client = require("../scylla_connection");
 
 async function retrieveSingleUser(email) {
   const retrieveUserQuery =
-    "SELECT email, password from mio.users WHERE email = ? ALLOW FILTERING;";
+    "SELECT user_id, email, password from mio.users WHERE email = ? ALLOW FILTERING;";
   try {
     const result = await client.execute(retrieveUserQuery, [email]);
     // Check if any rows were returned

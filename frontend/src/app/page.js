@@ -15,13 +15,15 @@ export default function Home() {
     // Define the async function
     const fetchData = async () => {
       try {
-        const cookie = getCookie("session") || "No session cookie found.";
+        const sessionCookie = getCookie("sessionId") || "No session cookie found.";
+        const tokenCookie = getCookie("token") || "No token cookie found.";
         const response = await axios.post(
           "http://localhost:3333/api/v1/authentication/login",
           {},
           {
             headers: {
-              Authorization: `${cookie}`, // Assuming it's a Bearer token, adjust if necessary
+              Authorization: `${sessionCookie}`, // Assuming it's a Bearer token, adjust if necessary
+              Token: tokenCookie
             },
             cancelToken: source.token, // Attach the cancel token
           }

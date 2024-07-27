@@ -13,18 +13,20 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const captchaResponseToken = grecaptcha.getResponse();
-      const captchaV2Response = await axios.post(
-        "http://localhost:3333/api/v1/authentication/recaptcha-v2-verify",
-        {},
-        { headers: { "recaptcha-v2-token": captchaResponseToken } }
-      );
-      if (captchaV2Response?.status === 200) {
+      // const captchaResponseToken = grecaptcha.getResponse();
+      // const captchaV2Response = await axios.post(
+      //   "http://localhost:3333/api/v1/authentication/recaptcha-v2-verify",
+      //   {},
+      //   { headers: { "recaptcha-v2-token": captchaResponseToken } }
+      // );
+      // if (captchaV2Response?.status === 200) {
+      if (true) {
         const response = await axios.post(
           "http://localhost:3333/api/v1/authentication/login",
           { email, password }
         );
-        setCookie("session", response?.data);
+        setCookie("sessionId", response?.data?.sessionId);
+        setCookie("token", response?.data?.token);
         console.log("Login Success!");
       } else {
         setError("Captcha failed!");
@@ -46,7 +48,7 @@ export default function Login() {
       ></Script>
       <h3>This is login page!</h3>
       <h1>Audio Recorder</h1>
-      <AudioRecorder />
+      {/* <AudioRecorder /> */}
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -62,10 +64,10 @@ export default function Login() {
           required
         />
         <br />
-        <div
+        {/* <div
           className="g-recaptcha"
           data-sitekey="6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M10"
-        ></div>
+        ></div> */}
         <br />
         <button type="submit">Login</button>
       </form>

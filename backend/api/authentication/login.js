@@ -7,6 +7,8 @@ const storeSession = require("../../database/redis/authentication/storeSession")
 const getSession = require("../../database/redis/authentication/getSession");
 const argon2 = require("argon2");
 const crypto = require("crypto");
+const jwt = require('jsonwebtoken');
+const cassandra = require('cassandra-driver');
 
 function daysFromEpochUntilToday() {
   // Unix epoch start date
@@ -73,9 +75,10 @@ router.post("/login", async (req, res) => {
     if (user) {
       const result = await argon2.verify(user?.password, req.body?.password);
       if (result) {
+        const token = jwt.sign({ user_id: user?.get("user_id").toString() }, process.env.HASH_SALT);
         const uniqueSessionId = generateUUIDFromEmail(user?.email);
         await storeSession(uniqueSessionId, user?.email);
-        res.status(200).send(uniqueSessionId);
+        res.status(200).send({"sessionId": uniqueSessionId, "token": token});
         return;
       } else {
         res.status(401).send("User unauthorized!");

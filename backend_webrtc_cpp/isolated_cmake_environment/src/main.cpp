@@ -69,7 +69,15 @@ private:
         if (ws_.got_binary())
         {
             std::cout << "Received binary data of size: " << bytes_transferred << " bytes" << std::endl;
+            std::string message = beast::buffers_to_string(buffer_.data());
             // Here you can process the binary data as needed
+            for (auto& session : allSessions_){
+                if(ip == session->ip && port == session->port){
+                    continue;
+                } else{
+                    session->do_write(message);
+                }
+            }
         }
         else
         {

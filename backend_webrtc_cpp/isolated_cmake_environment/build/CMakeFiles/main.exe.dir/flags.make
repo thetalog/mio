@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kim/Documents/code/miod/mio/backend_webrtc_cpp/isolated_cmake_environment/build/include/boost_1_85_0 -I/home/kim/Documents/code/miod/mio/backend_webrtc_cpp/isolated_cmake_environment/build/include/json/include
+CXX_INCLUDES = -I/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/include/boost_1_85_0 -I/home/kim/Documents/code/mio/backend_webrtc_cpp/isolated_cmake_environment/build/include/json/include
 
 CXX_FLAGS = -std=gnu++20
 

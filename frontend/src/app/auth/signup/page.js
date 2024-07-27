@@ -14,13 +14,14 @@ export default function Signup() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const captchaResponseToken = grecaptcha.getResponse();
-      const captchaV2Response = await axios.post(
-        "http://localhost:3333/api/v1/authentication/recaptcha-v2-verify",
-        {},
-        { headers: { "recaptcha-v2-token": captchaResponseToken } }
-      );
-      if (captchaV2Response?.status === 200) {
+      // const captchaResponseToken = grecaptcha.getResponse();
+      // const captchaV2Response = await axios.post(
+      //   "http://localhost:3333/api/v1/authentication/recaptcha-v2-verify",
+      //   {},
+      //   { headers: { "recaptcha-v2-token": captchaResponseToken } }
+      // );
+      // if (captchaV2Response?.status === 200) {
+      if (true) {
         const response = await axios.post(
           "http://localhost:3333/api/v1/authentication/signup",
           { email, displayName, userName, dateOfBirth, password }
@@ -32,6 +33,7 @@ export default function Signup() {
         //Error in captcha
       }
     } catch (error) {
+      console.log(error)
       setError("Something went wrong!");
     }
   };
@@ -45,11 +47,11 @@ export default function Signup() {
   };
   return (
     <div>
-      <Script
+      {/* <Script
         src="https://www.google.com/recaptcha/api.js"
         async
         defer
-      ></Script>
+      ></Script> */}
       <h3>This is signup page!</h3>
       <form onSubmit={handleSubmit}>
         <input
@@ -98,10 +100,10 @@ export default function Signup() {
           // required
         ></input>
         <br></br>
-        <div
+        {/* <div
           className="g-recaptcha"
           data-sitekey="6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M10"
-        ></div>
+        ></div> */}
         <br></br>
         <button
           // 6LdfxRYqAAAAAJtze8I8Aec5asdg-caworyBX8M10 Site Key v2
