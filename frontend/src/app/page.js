@@ -22,7 +22,7 @@ export default function Home() {
           {},
           {
             headers: {
-              Authorization: `${sessionCookie}`, // Assuming it's a Bearer token, adjust if necessary
+              Authorization: `${cookie}`, // Assuming it's a Bearer token, adjust if necessary
               Token: tokenCookie
             },
             cancelToken: source.token, // Attach the cancel token

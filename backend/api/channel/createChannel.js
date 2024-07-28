@@ -5,9 +5,6 @@ const createChannel = require("../../database/scylla/channel/createChannel");
 const uploadLogo = require("../../database/minio/channel/uploadLogo");
 const multer = require('multer');
 
-// Generate a base64-encoded salt
-const saltBase64 = process.env.HASH_SALT; // Example salt (base64 encoded)
-
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
@@ -22,15 +19,13 @@ router.post("/create-channel",upload.single('image'), async (req, res) => {
   const channelName = req.body?.channelName;
   const channelBio = req.body?.channelBio;
   const image = req.file; // Multer stores the uploaded file here
-  const imageStringify = image ? image.buffer.toString('base64') : null // Just an example of handling image data
   const minioResponse = await uploadLogo("mio", jwt.verify(req.headers["token"], process.env.HASH_SALT)?.user_id, image)
-  console.log(minioResponse)
   try {
     await createChannel(
       channelName,
       user_id,
       channelBio,
-      imageStringify
+      minioResponse?.etag
     );
     res.status(201).send("User created");
   } catch (error) {
